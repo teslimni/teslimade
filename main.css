@@ -3,9 +3,12 @@
     padding: 0;
 }
 
+html {
+    font-family: Lato, sans-serif;
+}
+
 .site {
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('img/teslim-presenting.jpg');
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -15,5 +18,9 @@
     color: #fff;
     font-size: 2rem;
     text-align: center;
-    padding: 0 5rem;
+    padding: 0 2rem;
+}
+
+.site h2 {
+    font-weight: 300;
 }
