@@ -30,7 +30,8 @@ body {
 }
 
 .site>header {
-    background: linear-gradient( to right, rgba(21, 109, 172, 0.8), rgba(125, 63, 173, 0.8)), url(/../img/slice1.png);
+    background: linear-gradient( to right, rgba(21, 109, 172, 0.8), rgba(125, 63, 173, 0.8));
+     /* url(img/slice1.png); */
     background-size: cover;
     background-position: top;
     height: 80vh;
