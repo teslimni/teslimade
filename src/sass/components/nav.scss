@@ -1,0 +1,31 @@
+.brand-bar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    padding-top: 30px;
+}
+
+nav {
+    justify-self: end;
+    width: 70%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__cta {
+    background: transparent;
+    border: 1px #0081d5 solid;
+    border-radius: 5px;
+    color: #C9D3DF;
+    padding: .5rem;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
