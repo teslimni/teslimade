@@ -1,0 +1,29 @@
+.services__card {
+    background: #53657d;
+    border-radius: .5rem;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.services__card-items h3 {
+    text-align: center;
+}
+
+.services__card-items ul {
+    padding-left: 2rem;
+}
+
+.services__cta {
+    background: #53657d;
+}
+
+.services__cta p {
+    color: #fff;
+    padding: 1rem;
+}
+
+.services__cta span {
+    font-size: inherit;
+    color: orangered;
+}

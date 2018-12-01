@@ -1,0 +1,63 @@
+section.contact {
+    padding: 5rem 0;
+}
+
+section.contact>.grid {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.contact__details {
+    margin: 5rem 0;
+}
+
+.contact {
+    &__message {
+        p {
+            margin: 1rem 0;
+        }
+        span {
+            font-size: 1.5rem;
+            @include respond(tab-land) {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__address {
+        margin: 1rem 0;
+    }
+}
+
+.message-icon {
+    width: 1rem;
+}
+
+input[type=text],
+input[type=email] {
+    background: #EBEFF3;
+    border: none;
+    border-radius: .5rem;
+    margin: 1.5rem 0;
+    outline-color: #c9d3df;
+    padding: .8rem;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    background: #ebeff3;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+button[type=submit] {
+    color: #fff;
+    background: #A939B9;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-transform: uppercase;
+}
