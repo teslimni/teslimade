@@ -7,7 +7,19 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px/16px = 62.5%
+    @include respond(phone) {
+        font-size: 30%;
+    }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
 }
 
 body {
@@ -15,8 +27,8 @@ body {
     color: #777;
     font-family: sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 .site {
@@ -30,231 +42,4 @@ body {
 .container {
     width: 80%;
     margin: auto;
-}
-
-.site>header {
-    background: linear-gradient( to right, rgba(21, 109, 172, 0.8), rgba(125, 63, 173, 0.8));
-    /* url(img/slice1.png); */
-    background-size: cover;
-    background-position: top;
-    height: 80vh;
-}
-
-.hero__text {
-    color: #C9D3DF;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    text-align: center;
-    transform: translate(-50%, -70%);
-    width: 80%;
-}
-
-.hero__text h2 {
-    font-size: 2.4rem;
-}
-
-.hero__text h3 {
-    font-size: 2rem;
-}
-
-.avatar {
-    position: absolute;
-    left: 50%;
-    top: 73%;
-    transform: translate(-50%);
-    border-radius: 50%;
-    height: 100px;
-}
-
-section.services {
-    background: #ADB9C9;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 5rem 0;
-}
-
-section.services .grid {
-    grid-row-gap: 2rem;
-}
-
-.section__heading {
-    color: #222;
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.services__card {
-    background: #53657d;
-    border-radius: .5rem;
-    color: #fff;
-    font-size: 1.6rem;
-    padding: 1.5rem;
-    text-align: left;
-}
-
-.services__card-items h3 {
-    text-align: center;
-}
-
-.services__card-items ul {
-    padding-left: 2rem;
-}
-
-.services__cta {
-    background: #53657d;
-}
-
-.services__cta p {
-    color: #fff;
-    font-size: 1.6rem;
-    padding: 1rem;
-}
-
-.services__cta span {
-    font-size: inherit;
-    color: orangered;
-}
-
-.portfolio {
-    background: #374355;
-    padding: 5rem 0;
-    text-align: center;
-}
-
-.portfolio .grid {
-    grid-row-gap: 2rem;
-}
-
-.portfolio__card {
-    width: 100%;
-}
-
-.portfolio__card-item {
-    width: 100%;
-}
-
-.portfolio__img {
-    width: 100%;
-}
-
-.articles {
-    background: #C9D3DF;
-    padding: 5rem 0;
-}
-
-article .content {
-    margin: 2.5rem 0;
-}
-
-.feature {
-    background: linear-gradient(to right, #C28359, #C2B24A);
-    color: #fff;
-    padding: 1rem;
-}
-
-.feature .date {
-    margin-bottom: 2rem;
-}
-
-.feature footer {
-    margin-bottom: 5rem;
-}
-
-article:first-child {
-    border-radius: .8rem .8rem 0 0;
-}
-
-article:last-child {
-    border-radius: 0 0 .8rem .8rem;
-}
-
-article:last-child footer {
-    border-bottom-left-radius: .8rem;
-}
-
-.articles__cta {
-    border: 1px solid #fff;
-    color: #ffffff;
-    padding: .5rem;
-    border-radius: 10rem;
-    text-decoration: none;
-}
-
-article.grid {
-    background: #fff;
-    grid-template-columns: 1fr 1fr;
-}
-
-article.grid>.body {
-    padding: 1rem;
-}
-
-article.grid>footer {
-    background: rebeccapurple;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-
-article.grid:last-child body {
-    grid-column: 1;
-}
-
-article.grid:last-child footer {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-section.contact {
-    padding: 5rem 0;
-}
-
-section.contact>.grid {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 2rem;
-}
-
-.contact__details {
-    margin: 5rem 0;
-}
-
-.contact__message p,
-.contact__address {
-    margin: 1rem 0;
-}
-
-.message-icon {
-    width: 1rem;
-}
-
-input[type=text],
-input[type=email] {
-    background: #EBEFF3;
-    border: none;
-    border-radius: .5rem;
-    margin: 1.5rem 0;
-    outline-color: #c9d3df;
-    padding: .8rem;
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
-    border: none;
-    background: #ebeff3;
-    border-radius: .5rem;
-    padding: 1rem;
-}
-
-button[type=submit] {
-    color: #fff;
-    background: #A939B9;
-    border: none;
-    border-radius: .5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 1rem;
-    text-transform: uppercase;
 }

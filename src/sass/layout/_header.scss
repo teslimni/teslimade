@@ -1,0 +1,32 @@
+.site>header {
+    background: linear-gradient( to right, rgba(21, 109, 172, 0.8), rgba(125, 63, 173, 0.8)), url(../img/slice1.png);
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+    height: 80vh;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    height: 100px;
+}
+
+.hero {
+    &__text {
+        color: #C9D3DF;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        transform: translate(-50%, -70%);
+        width: 80%;
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+}

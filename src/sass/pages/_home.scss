@@ -1,0 +1,22 @@
+section.services {
+    background: #ADB9C9;
+    text-align: center;
+    padding: 5rem 0;
+    .grid {
+        grid-row-gap: 2rem;
+        @include respond(medium) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1rem;
+            .services__cta {
+                grid-column: 1/-1;
+            }
+        }
+    }
+}
+
+.section {
+    &__heading {
+        color: #222;
+        text-align: center;
+    }
+}

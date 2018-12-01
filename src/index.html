@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teslim's Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="../dist/app.css"> -->
 </head>
 <body>
     <div class="site">
         <header>
+            <div class="nav__mobile">
+                <button class="nav__mobile-btn">
+                    <div class="nav__mobile-icon">&nbsp;</div>
+                </button>
+                <div class="nav__mobile-panel">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container hero">
                 <div class="brand-bar">
                     <div class="logo">Logo</div>
                     <nav>
                         <ul>
-                            <li>Home</li>
-                            <li>What I Do</li>
-                            <li>Portfolio</li>
-                            <li>Articles</li>
-                            <li>How I Work</li>
-                            <li>Contact</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">What I Do</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">How I Work</a></li>
+                            <li><a href="#">Contact</a></li>
                             <a class="nav__cta" href="#">Hire Me</a>
                         </ul>
                     </nav>
@@ -30,7 +44,7 @@
                     <h3>Web Developer</h3>
                     <p>If you can think it, I can build it. Perfect match. <br> Let's get your product up and running from interactive prototype to finished approved product you can be proud of. I am open to joining your team as a remote staff or freelancer. Waiting to hear from you.</p>
                 </div>
-                <img src="img/teslim-portfolio.png" alt="teslim" class="avatar">
+                <img src="/img/teslim-portfolio.png" alt="teslim" class="avatar">
             </div>
         </header>
         <section class="services">
@@ -92,7 +106,7 @@
                     </div>
                 </div>
                 <div class="services__cta">
-                    <p>Need a freelancer? Download <span>my approach to work</span></p>
+                    <p>Need a freelancer? Get in touch and  <span>let's talk</span></p>
                 </div>
             </div>
         </section>
@@ -187,9 +201,9 @@
                         <img class="message-icon" src="img/message-icon.svg" title="message-icon">
                         <span>teslim@teslimade.com</span>
                         <div class="contact__address">
-                            IW 2 Ilmi Avenue, <br>
+                            <p>IW 2 Ilmi Avenue, <br>
                             Minna, Niger State, <br>
-                            Nigeria.    
+                            Nigeria.</p> 
                         </div>
                         <div class="contact__social">
 
@@ -200,6 +214,5 @@
             </div>
         </section>
     </div>
-    <script src="js/index.js"></script>
 </body>
 </html>

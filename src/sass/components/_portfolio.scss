@@ -1,0 +1,25 @@
+.portfolio {
+    background: #374355;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.portfolio .grid {
+    grid-row-gap: 2rem;
+    @include respond(medium) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+.portfolio__card {
+    width: 100%;
+}
+
+.portfolio__card-item {
+    width: 100%;
+}
+
+.portfolio__img {
+    width: 100%;
+}
