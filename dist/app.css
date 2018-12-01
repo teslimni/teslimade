@@ -144,6 +144,9 @@ nav {
       box-shadow: 1px 1px 8px #222;
       color: #ffffff;
       padding: 2rem 0 10rem;
+      position: absolute;
+      right: 0;
+      top: 0;
       transform: translateX(350px);
       transition: transform .2s ease;
       z-index: 10;
