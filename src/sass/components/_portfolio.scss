@@ -13,6 +13,9 @@
 }
 
 .portfolio__card {
+    @include respond(phone) {
+        grid-column: 2/6;
+    }
     width: 100%;
 }
 
