@@ -33,7 +33,8 @@ body {
   overflow-x: hidden; }
 
 .site {
-  background: #adb9c9; }
+  background: #adb9c9;
+  overflow-x: hidden; }
 
 .grid {
   display: grid; }
